@@ -1,0 +1,16 @@
+<view>
+  <view wx:for="{{menus}}" wx:key="{{index}}" class='menu-item'>
+    <image class='icon' src='/assets/img/{{item.icon}}.png'></image>
+    <view class='menu-content'>
+      <view class='title'>{{item.title}}</view>
+    </view>
+    <view wx:if="{{item.unread>0}}" class='tip'>{{item.unread}}</view>
+  </view>
+  <view wx:for="{{friends}}" wx:key="{{index}}" class='friend-item'>
+    <image wx:if="{{!item.header}}"  bindtap='bindNavigation' class='avatar' src='/assets/avatars/{{item.avatar}}.jpg' data-name='{{item.name}}' data-avatar='{{item.avatar}}'></image>
+    <view wx:if="{{!item.header}}" bindtap='bindNavigation' class='friend-content' data-name='{{item.name}}' data-avatar='{{item.avatar}}'>
+      <view wx:if="{{!item.header}}" class='name'>{{item.name}}</view>
+    </view>
+    <view wx:else class='header'>{{item.name}}</view>
+  </view>
+</view>

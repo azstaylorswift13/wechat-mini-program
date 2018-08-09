@@ -1,0 +1,32 @@
+<view>
+  <view class='person-info'>
+    <image class='avatar' src='/assets/avatars/{{details_avatar}}.jpg'></image>
+    <view class='person-info-content'>
+      <view>
+        <view class='name-and-gender'>
+          <view class='name'>{{details_name}}</view>
+          <image class='gender' src='/assets/img/new_friends.png'></image>
+        </view>
+        <view class='wxname'>微信号：{{details_wxname}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='set-tag'>设置备注和标签</view>
+  <view class='someclass'>
+    <view class='region'>
+      <view>地区</view>
+      <view class='region-details'>秦国</view>
+    </view>
+    <view class='person-album'>
+      <view>个人相册</view>
+      <image class='person-album-details' src='/assets/avatars/{{details_avatar}}.jpg'></image>
+      <image class='person-album-details' src='/assets/avatars/{{details_avatar}}.jpg'></image>
+      <image class='person-album-details' src='/assets/avatars/{{details_avatar}}.jpg'></image>
+    </view>
+    <view class='more'>更多</view>
+  </view>
+  <view class='dialogue'>
+    <button class='send-messages'>发消息</button>
+    <button class='video-call'>视频通话</button>
+  </view>
+</view>

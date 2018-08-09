@@ -1,0 +1,12 @@
+<view>
+  <block wx:for="{{item}}" wx:key="{{index}}">
+    <view bindtap='bindNavigation' data-index='{{index}}' class='message-item' data-name='{{item.name}}' data-recent='{{item.recent}}' data-time='{{item.time}}' data-avatar='{{item.avatar}}'>
+      <image class='avatar' src="/assets/avatars/{{index}}.jpg"></image>
+      <view class='message-content'>
+        <view class='name'>{{item.name}}</view>
+        <view class='recent'>{{item.recent}}</view>
+      </view>
+      <view class='time'>{{item.time}}</view>
+    </view>
+  </block>
+</view>

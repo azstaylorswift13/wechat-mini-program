@@ -1,0 +1,17 @@
+<view>
+  <block wx:for="{{chats}}" wx:key="{{index}}">
+    <view class='chat-item'>
+      <image wx:if="{{!item.time}}" class='avatar' src='/assets/avatars/{{item.avatar}}.jpg'></image>
+      <view wx:if="{{!item.time}}" class='chat-content'>
+        <view class='name'>{{item.name}}</view>
+        <view class='message-content'><text>{{item.recent}}</text></view>
+      </view>
+      <view wx:else class='time'>{{item.time}}</view>
+    </view>
+  </block>
+  <view class="input-item">
+    <image id="img" src="/assets/avatars/2.jpg"></image>
+      <textarea id="text" auto-height='true' show-confirm-bar="{{false}}" cursor-spacing="20" name="message" value="{{message_clear}}" bindinput='bindText' bindconfirm="sendmessage" ></textarea>
+      <button id="submit" form-type="submit" disabled="{{subdisabsled}}" bindtap='sendmessage'>发送</button>
+  </view>
+</view>

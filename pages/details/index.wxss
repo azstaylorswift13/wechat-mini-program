@@ -1,0 +1,102 @@
+page {
+  background: #ececec;
+}
+
+.person-info {
+  display: flex;
+  margin-top: 24rpx;
+  flex-direction: row;
+  background: #fff;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 16rpx;
+}
+
+.person-info-content {
+  flex: 1;
+  display: flex;
+  padding-left: 24rpx;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+}
+
+.name-and-gender {
+  flex: 1;
+  display: flex;
+}
+
+.name {
+  font-size: 18px;
+  margin-bottom: 8rpx;
+}
+
+.gender {
+  width: 32rpx;
+  height: 32rpx;
+  display: flex;
+  padding-left: 24rpx;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+}
+
+.wxname {
+  font-size: 14px;
+  color: #999;
+}
+
+.set-tag, .someclass {
+  margin: 36rpx 0;
+  background: #fff;
+  font-size: 16px;
+  padding-left: 32rpx;
+  line-height: 60rpx;
+}
+
+.region {
+  display: flex;
+  flex: 1;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.region-details {
+  margin-left: 96rpx;
+  color: #999;
+}
+
+.person-album {
+  height: 128rpx;
+  line-height: 128rpx;
+  display: flex;
+  flex: 1;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.person-album-details {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 16rpx 32rpx;
+}
+
+.dialogue {
+  margin-top: 64rpx;
+}
+
+.dialogue button {
+  margin: 32rpx;
+  text-align: center;
+}
+
+.send-messages {
+  background: #04b91b;
+  color: #fff;
+}
+
+.video-call {
+  background: #fff;
+  color: #000;
+}

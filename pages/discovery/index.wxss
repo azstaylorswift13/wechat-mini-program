@@ -1,0 +1,80 @@
+page{
+  background: #ececec;
+}
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 16rpx;
+  margin-left: 32rpx;
+  align-content: center;
+  align-self: center;
+  }
+
+.menu-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding-left: 24rpx;
+  align-content: center;
+  align-self: center;
+}
+
+.title {
+  font-size: 14px;
+  align-content: center;
+  align-self: center;
+  margin-right: 36rpx;
+}
+
+.sub-title {
+  display: flex;
+  flex: 1;
+  align-content: center;
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  margin-right: 24rpx;
+}
+
+.right-image {
+  width: 48rpx;
+  height: 48rpx;
+  align-content: center;
+  align-self: center;
+}
+
+.tip {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  background: #f00;
+  justify-content: center;
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin-right: 24rpx;
+  font-size: 14px;
+  color: #fff;
+}
+
+.header {
+  height: 36rpx;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background: #ececec;
+  font-size: 12px;
+  padding-left: 36rpx;
+}

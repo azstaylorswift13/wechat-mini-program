@@ -1,0 +1,23 @@
+<view>
+  <view class='person-info'>
+    <image class='avatar' src='/assets/avatars/2.jpg'></image>
+    <view class='person-info-content'>
+      <view>
+        <view class='name'>端木蓉</view>
+        <view class='wxname'>微信号：duanmurong</view>
+      </view>
+    </view>
+    <view class='qrcode'>
+      <image class='qrcode-image' src='/assets/icons/qrcode.png'></image>
+    </view>
+  </view>
+  <block wx:for="{{menus}}" wx:key="{{index}}">
+    <view bindtap='bindNavigation' data-index='{{index}}' class='menu-item'>
+      <image wx:if="{{!item.header}}" class='icon' src='/assets/icons/{{item.icon}}.png'></image>
+      <view wx:if="{{!item.header}}" class='menu-content'>
+        <view class='title'>{{item.name}}</view>
+      </view>
+      <view wx:if="{{item.header}}" class='header'></view>
+    </view>
+  </block>
+</view>
